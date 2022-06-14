@@ -41,23 +41,47 @@
 //const numbers = new Array(1, 2, 3, 4, 5) //using a constructor. The keyword for constructors is new
 //console.log(numbers)
 
-const fruits = ['apples', 'mangoes', 'bananas', 10, true] //commonly used method. Arrays can have different datatypes
+//const fruits = ['apples', 'mangoes', 'bananas', 10, true] //commonly used method. Arrays can have different datatypes
 
-fruits[5] = 'oranges' //adding a value to the array
+//fruits[5] = 'oranges' //adding a value to the array
 
-fruits.push('passion') //adding a value to the tail
+//fruits.push('passion') //adding a value to the tail
 
-fruits.unshift('strawberries')// adding a value to the start
+//fruits.unshift('strawberries')// adding a value to the start
 
-fruits.pop() //deleting the last value
+//fruits.pop() //deleting the last value
 
-console.log(Array.isArray(fruits)) //check presence
+//console.log(Array.isArray(fruits)) //check presence
 
-console.log(fruits.indexOf('oranges')) //check index in array
+//console.log(fruits.indexOf('oranges')) //check index in array
 
-console.log(fruits)
+//console.log(fruits)
 
-console.log(fruits[1])
+//console.log(fruits[1])
+
+//object literals, key value pairs
+
+const person = {
+    firstName: 'Frances',
+    lastName: 'Mutahi',
+    age: '24',
+    hobbies:['politics', 'coding', 'Nature strolls'],
+    address: {
+        street: 'Kwetu',
+        city: 'Nyumbani',
+        County: 'Nyeri'
+    }
+}
+
+console.log(person, person.firstName)
+
+console.log(person.hobbies[1])
+console.log(person.address.County)
+
+const {firstName , lastName, address:{city}} = person //pulling objects out
+console.log(firstName, city)
+
+person.email = 'email@gmail.com' //add values
 
 
 
