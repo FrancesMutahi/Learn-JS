@@ -25,3 +25,13 @@
 //const hello = `my name is ${name} and I am ${age}`
 
 //console.log(hello)
+
+//string properties and methods
+
+const s = 'Hello world!'
+
+console.log(s.length) //a property does not have parenthesis
+console.log(s.toUpperCase()) //a method has parenthesis.A method is a function associated with an object
+console.log(s.substring(0, 5).toLowerCase()) //takes two indexes, start and finish
+console.log(s.split(''))
+
